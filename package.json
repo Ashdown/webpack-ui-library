@@ -2,7 +2,7 @@
   "name": "webpack-ui-library",
   "description": "",
   "version": "0.0.6",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
   "license": "MIT",
   "repository": {},
   "author": "Rory Devane",
