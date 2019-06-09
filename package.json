@@ -8,7 +8,9 @@
   "author": "Rory Devane",
   "scripts": {
     "start": "parcel src/docs/index.html",
-    "build": "webpack",
+    "build": "npm run build:jsx && npm run build:scss",
+    "build:jsx": "webpack --config webpack-jsx.config.js",
+    "build:scss": "webpack --config webpack-styles.config.js",
     "build:docs": "parcel build src/docs/index.js -d dist/docs/"
   },
   "dependencies": {
@@ -20,11 +22,13 @@
     "@babel/preset-env": "^7.3.4",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.5",
-    "parcel-bundler": "^1.12.3",
-    "webpack": "^2.7.0",
+    "webpack": "^4.4.0",
+    "webpack-cli": "^3.3.3",
     "webpack-node-externals": "^1.7.2",
     "css-loader": "^2.1.0",
+    "mini-css-extract-plugin": "^0.7.0",
     "node-sass": "^4.11.0",
+    "parcel-bundler": "^1.12.3",
     "sass-loader": "^6.0.7",
     "style-loader": "^0.23.1"
   }

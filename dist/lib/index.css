@@ -1,0 +1,8 @@
+.custom-button {
+  font-size: 16px;
+  font-weight: 400;
+  background-color: red;
+  color: white; }
+  .custom-button .button-text {
+    text-transform: capitalize; }
+
