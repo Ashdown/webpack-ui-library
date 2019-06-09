@@ -5,4 +5,4 @@ const Button = ({ text }) =>
         <span className="button-text">{text}</span>
     </button>
 
-export default Button
+export { Button }
